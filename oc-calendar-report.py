@@ -94,7 +94,7 @@ for d in week:
   if (d[0].date() == curdt.date()):
     found = True
     print("<tr>")
-    print("<td>"+d[0].strftime("%a %B %d")+"<td style='min-width:100px;'>"+d[1]+"<td>"+d[0].strftime("%I:%M:%S %p")+"<td>"+d[2]+"")
+    print("<td>"+d[0].strftime("%a %B %d")+"<td>"+d[1]+"<td>"+d[0].strftime("%I:%M:%S %p")+"<td>"+d[2]+"")
 if found == False:
   print("<tr><td>No Events Today")
 print("</table>")
@@ -109,7 +109,7 @@ for d in week:
   if (d[0].date() != curdt.date()):
     found = True
     print("<tr>")
-    print("<td>"+d[0].strftime("%a %B %d")+"<td style='min-width:100px;'>"+d[1]+"<td>"+d[0].strftime("%I:%M:%S %p")+"<td>"+d[2]+"")
+    print("<td>"+d[0].strftime("%a %B %d")+"<td>"+d[1]+"<td>"+d[0].strftime("%I:%M:%S %p")+"<td>"+d[2]+"")
 if found == False:
   print("<tr><td>No Events In Next 7 days")
 print("</table>")
